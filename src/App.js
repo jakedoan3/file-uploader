@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import DragDropFiles from './components/DragDropFiles'; 
+import UploadAudio from './components/UploadAudio';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+//TO-DO
+  //merge drag and drop into upload component
+  //authentication+signup/login components
+
+const App = () => {
+  return(
+    <div className='container'>
+      {/* <DragDropFiles /> */}
+      <UploadAudio />
     </div>
-  );
+  )
 }
 
 export default App;
