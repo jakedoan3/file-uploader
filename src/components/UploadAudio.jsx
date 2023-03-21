@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { storage } from '../firebase'
 import { ref, uploadBytes, listAll, getDownloadURL } from 'firebase/storage'
 import {v4} from 'uuid'
+// import DragDropFiles from './DragDropFiles'
 
 const UploadAudio = () => {
     const [audioUpload, setAudioUpload] = useState(null)
@@ -27,14 +28,18 @@ const UploadAudio = () => {
                 })
             })
         })
-    }, [])
+    }, [audioListRef])
+
+    
 
   return (
-    <div className='App'>
+    <div className='upload'>
         <input 
         type='file'
+        // title=''
         onChange={(e) => {setAudioUpload(e.target.files[0])}}
         />
+        {/* <DragDropFiles /> */}
         <button onClick={upload}>Upload Audio</button>
         
         {audioList.map((url)=>{

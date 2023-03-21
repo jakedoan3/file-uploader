@@ -43,7 +43,7 @@ const DragDropFiles = () =>{
                         hidden
                         ref={inputRef}
                     />
-                    <button onClick={() => inputRef.current.click()}>Select Files</button>
+                    <button onClick={() => inputRef.current.click()}>Choose File</button>
                 </div>
             )}
         
