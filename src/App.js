@@ -8,7 +8,7 @@ import { onAuthStateChanged } from 'firebase/auth'
 import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase/firestore";
 
 
-//last updated April 18,2023
+//last updated April 19,2023
 
 //TO-DO
 //merge drag and drop into upload component
