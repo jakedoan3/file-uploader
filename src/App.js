@@ -5,14 +5,18 @@ import Login from "./components/Login";
 import { useEffect, useState } from "react";
 import { auth, db } from "./firebase"
 import { onAuthStateChanged } from 'firebase/auth'
-import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase/firestore";
+// import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase/firestore";
 
 
-//last updated May 8, 2023
+//last updated May 11, 2023
 
 //TO-DO
+//check which features timed out in Firebase
 //merge drag and drop into upload component
+//remove audio specifications, just generic file uploads for now
 //authentication+signup/login components
+  //enable users to stay logged in after leaving the site
+// CSS
 
 const App = () => {
   const [loginEmail, setLoginEmail] = useState("");
