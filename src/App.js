@@ -8,7 +8,7 @@ import { onAuthStateChanged } from 'firebase/auth'
 // import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase/firestore";
 
 
-//last updated May 12, 2023
+//last updated May 15, 2023
 
 //TO-DO
 //check which features timed out in Firebase
