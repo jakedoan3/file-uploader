@@ -12,7 +12,7 @@ import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase
 import { Route, Routes} from 'react-router-dom'
 
 
-//last updated August 1, 2023
+//last updated August 2, 2023
 
 //TO-DO:
 
